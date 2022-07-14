@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('k9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f45b69;
+    height:70px;
+    border-bottom: 3.5px solid #ffffff;
+}
+
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    padding-left: 200px;
+    margin-right: 50px;
+    font-family: "Gill Sans", sans-serif;;
+} 
+.list {
+    display: flex;
+}
+#navbar ul li{
+   font-size: 1.3rem;
+  list-style:none;
+}
+#navbar ul li a{
+    padding: 12px 25px;
+    text-decoration: none;
+    display: block;
+    color:white;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+
+    color:black;
+    background-color: rgb(201,192,192);
+}
+#logo{
+    margin: 12px 31px;
+}
+#logo img{
+    margin: 3px 6px
+}
+#logo div {
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+    color:white;
+}
+.box img{
+    height: 340px;
+    width: 640px;
+    margin: 80px 40px;
+	border-radius: 20px;
+border: 5px solid rgb(113, 185, 245);
+
+}
+.box .sub1 {
+    font-size: 20px;
+	color:white;
+font-family:cursive;
+	margin: 10px 40px;
+	font-style:italic;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    color:white;
+    font-family:Arial Narrow, sans-serif;
+    
+}
+
+.box1 img {
+    height: 145px;
+    width: 280px;
+    margin: 0px -11px;
+}
+.box2 img {
+    margin: 18px 31px;
+    height: 89px;
+    width: 196px;
+}
+.box2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    color:white;
+    font-family:Arial Narrow, sans-serif;
+    
+}
+.box3 img {
+    margin: -9px -41px;
+    height: 176px;
+    width: 343px;
+}
+.box3{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    color:white;   
+    font-family:Arial Narrow, sans-serif;
+}
+#top-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

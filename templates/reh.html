@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ViAC</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="stylesheet" href="{{url_for('static', filename='result1.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/animate/animate.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/select2/select2.min.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='vendor/perfect-scrollbar/perfect-scrollbar.css')}}">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div id="navbar">
+		<div id="logo">
+			<img src="{{url_for('static', filename='logo.png')}}" alt="ViAC">
+			<!-- <div>ViAC</div> -->
+
+		</div>
+		<div class="list">
+			<ul>
+
+				<li class="item"><a href="http://127.0.0.1:5000/">Home</a></li>
+				<li class="item"><a href="http://127.0.0.1:5000/predict">Start</a></li>
+				<li class="item"><a href="http://127.0.0.1:5000/records">About us</a></li>
+				<!-- <li class="item"><a href="#button">Button</a></li> -->
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver3 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Category</th>
+									<th class="cell100 column2">Name</th>
+									<th class="cell100 column3">Mask</th>
+									<th class="cell100 column4">Temperature</th>
+									<th class="cell100 column5">Spo2</th>
+									<th class="cell100 column6">Date</th>
+									<th class="cell100 column7">Contact No.</th>
+
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								{% for r in data %}
+								<tr class="row100 body">
+        							
+									<td class="cell100 column1">{{r[1]}}</td>
+									<td class="cell100 column2">{{r[2]}}</td>
+									<td class="cell100 column3">{{r[3]}}</td>
+									<td class="cell100 column4">{{r[4]}}</td>
+									<td class="cell100 column5">{{r[5]}}</td>
+									<td class="cell100 column6">{{r[6]}}</td>
+									<td class="cell100 column7">{{r[7]}}</td>
+
+								</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>ViAC</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='covid.css')}}">
+</head>
+
+<div id="particles-js">
+    <script src="{{url_for('static', filename='particles.js')}}"></script>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+</div> 
+
+<body>
+
+<div id="top-container">
+    <div id="navbar">
+        <div id="logo">
+	<img src="{{url_for('static', filename='logo.png')}}" alt="ViAC" width="120" height="45">
+
+        </div>
+        <div class="list">
+            <ul>
+
+                <li class="item"><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li class="item"><a href="http://127.0.0.1:5000/predict">Start</a></li>
+                <li class="item"><a href="http://127.0.0.1:5000/records">Records</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="box">
+            <img src="{{url_for('static', filename='pt.png')}}" alt="">
+
+
+            <div class="sub1">
+
+                <h2>VISITOR ANALYSIS FOR COVID-19</h2>
+               
+		<br>
+                <h4>"An automated system that detects face mask, measures temperature and oxygen level of visitor
+                    contactlessly and evaluates his eligibility on whether to grant him access or not to the
+                    organization."
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="box1">
+
+            <img src="{{url_for('static', filename='one.png')}}" alt="">
+
+            <img src="{{url_for('static', filename='boy.png')}}" alt="">
+            <div class="sub1">
+
+                <h2>Mask Detection</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="box2">
+
+            <img src="{{url_for('static', filename='two.png')}}" alt="">
+
+            <img src="{{url_for('static', filename='temp.png')}}" alt="">
+
+            <div class="sub1">
+
+                <h2>Human Body Temperature</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="box3">
+
+            <img src="{{url_for('static', filename='three.png')}}" alt="">
+
+            <img src="{{url_for('static', filename='pulse.png')}}" alt="">
+
+            <div class="sub1">
+
+                <h2>SP02 level in Body</h2>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{url_for('static', filename='demo.js')}}"></script>
+
+
+
+
+</body>
+
+</html>
